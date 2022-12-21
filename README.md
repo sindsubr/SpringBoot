@@ -39,7 +39,8 @@ To restart server automatically if any code changes occur.<br>
 <h3>spring-boot-starter-actuator</h3>
 To monitor and manage applications and to check health,info of app metrics.<br>
 <h3>Endpoints:</h3>
-/actuator/health exposed automatically
+/actuator/health exposed automatically <br>
+<a href="https://docs.spring.io/spring-boot/docs/2.1.7.RELEASE/reference/html/production-ready-endpoints.html#:~:text=Actuator%20endpoints%20let%20you%20monitor,can%20be%20enabled%20or%20disabled">spring-boot-actuator endpoints</a>.
 
 <h3>spring-boot-starter-security</h3>
 To enable security for endpoints.
