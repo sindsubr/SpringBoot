@@ -41,6 +41,11 @@ To monitor and manage applications and to check health,info of app metrics.<br>
 <h3>Endpoints:</h3>
 /actuator/health exposed automatically
 
+<h3>spring-boot-starter-security</h3>
+To enable security for endpoints.
+configure security<br>
+auto generated password for development<br>
+
 <h3>application.properties</h3>
 <code>#Use wildcard '*' toexpose all endpoints
 management.endpoints.web.exposure.include= *
