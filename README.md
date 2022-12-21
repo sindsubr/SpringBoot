@@ -47,6 +47,8 @@ To enable security for endpoints.
 configure security<br>
 auto generated password for development<br>
 
+<h2>Spring Boot Properties:</h2>
+https://docs.spring.io/spring-boot/docs/current/reference/html/application-properties.html
 <h3>application.properties</h3>
 <code>#Use wildcard '*' toexpose all endpoints
 management.endpoints.web.exposure.include= *
