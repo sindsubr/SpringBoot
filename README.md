@@ -51,8 +51,10 @@ info.app.name=Spring Sample Application
 info.app.description=This is my first spring boot application
 info.app.version=1.0.0
 </code>
+<br><br>
 
-
+<b>Json view for chrome:</b><br>
+https://chrome.google.com/webstore/detail/json-visualizer/dlpmomaegoaeahhajgkmfifdfdmliajd/related?hl=en
 
 
 
