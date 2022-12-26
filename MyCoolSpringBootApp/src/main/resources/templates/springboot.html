@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<link rel="stylesheet" href="/static/css/mystyle.css">
+<style>
+h1 {
+	color: green;
+}
+
+h2 {
+	color: purple;
+}
+
+h3 {
+	color: red;
+}
+
+b {
+	color: brown;
+}
+</style>
+<title>Spring Boot Notes</title>
+</head>
+<body>
+	<h1>Spring Boot Learning</h1>
+
+	To create
+	<b><i>stand alone</i></b> spring project with
+	<b><i>minimal Spring configuration</i></b>. It has
+	<b><i>Embeded Tomcat, Jetty or Undertow</i></b> directly (no need to
+	deploy WAR files)
+	<br>
+	<br>
+	<a href="https://spring.io/projects/spring-boot">spring-boot-projects</a>
+
+	<h1>Topics</h1>
+	<ol>
+		<li>Quickly develop Spring Boot App</li>
+		<li>Rest API using Spring Boot</li>
+		<li>Spring Mvc app with spring boot with thymeleaf</li>
+		<li>CRUD development with spring boot</li>
+	</ol>
+	<br>
+	<h1>Spring Initializer</h1>
+	<a href="https://start.spring.io/">Spring Initializer</a>
+	<br>
+	<a href="https://spring.io/quickstart">quickstart</a>
+
+	<h2>Annotations:</h2>
+	<b>@SpringBootApplication :</b> For
+	@Configuration,@EnableAutoConfiguration,@ComponentScan
+	<br> If you want to scan other packages :
+	<b>@SpringBootApplication(ScanBasePackages = {"pkg.name",..}</b>
+	<br> @RestController
+	<br> @Controller
+	<br>
+
+	<b>SpringApplication</b> class creates Application context and register
+	all bean.
+	<br>
+	<br>
+	<b>To create jar/war</b>
+	<br> mvn clean compile test
+	<br> mvn package
+	<br>
+	<b>To run</b>
+	<br> mvn spring-boot:run mycoolapp(or)
+	<br> java >jar mycoolapp
+
+	<h1>Spring Boot Dependencies</h1>
+	<h3>spring-boot-dev-tools</h3>
+	To restart server automatically if any code changes occur.
+	<br>
+
+	<h3>spring-boot-starter-actuator</h3>
+	To monitor and manage applications and to check health,info of app
+	metrics.
+	<br>
+
+	<h2>Endpoints:</h2>
+	/actuator/health exposed automatically
+	<br>
+	<a
+		href="https://docs.spring.io/spring-boot/docs/2.1.7.RELEASE/reference/html/production-ready-endpoints.html#:~:text=Actuator%20endpoints%20let%20you%20monitor,can%20be%20enabled%20or%20disabled">spring-boot-actuator
+		endpoints</a>.
+
+	<h3>spring-boot-starter-security</h3>
+	To enable security for endpoints. configure security
+	<br> Auto generated password for development
+	<br>
+
+	<h3>spring-boot-starter-web</h3>
+	For spring mvc web app support
+	<h3>spring-boot-starter-data-jpa</h3>
+	It enables crud operations automatically based on entity and id type
+	mentioning in JPARepository interface.
+	<h3>mysql-connector-java</h3>
+	mysql connector -> search for datasource in application.properties
+	<h3>spring-boot-starter-data-rest</h3>
+	It enables rest endpoints automatically based on entity name
+
+	<h3>spring-boot-starter-thymeleaf</h3>
+
+
+	<h2>Spring Boot Properties:</h2>
+	<a
+		href="https://docs.spring.io/spring-boot/docs/current/reference/html/application-properties.html">application-properties</a>
+	<a
+		href="https://chrome.google.com/webstore/detail/json-visualizer/dlpmomaegoaeahhajgkmfifdfdmliajd/related?hl=en">json
+		visualizer for chrome</a>
+
+<h1>Thymeleaf</h1>
+
+<a href="https://www.thymeleaf.org/doc/tutorials/3.0/thymeleafspring.html#creating-a-form">thymeleaf-form-crestion-tutorial</a>
+
+</body>
+</html>
